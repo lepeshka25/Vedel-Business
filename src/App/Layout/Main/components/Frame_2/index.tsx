@@ -1,5 +1,4 @@
 import React, {FC} from 'react';
-import num from '../../../../../assets/Main/frameTwo/num fram2.svg'
 import iconPlus from '../../../../../assets/Main/frameTwo/plus.png'
 import iconList from '../../../../../assets/Main/frameTwo/Circle.png'
 import image from '../../../../../assets/Main/frameTwo/frameTwo_image.svg'
@@ -65,6 +64,10 @@ const FrameTwo: FC = () => {
 						</div>
 
 					</div>
+
+				</div>
+
+				<div className={cs.container_two}>
 
 				</div>
 			</div>
