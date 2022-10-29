@@ -133,6 +133,57 @@
 
     }
 
+    .container_two {
+      padding: 50px 0;
+      h1 {
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 5vw;
+        @media (max-width: 768px) {
+          font-size: 5vw;
+        }
+        @media (max-width: 375px) {
+          font-size: 24px;
+        }
+      }
+
+      .container_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        @media (min-width: 1200px) {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+    }
+
+    .container_reg {
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+      button {
+        width: 278px;
+        height: 75px;
+        border: none;
+        outline: none;
+        color: white;
+        background: linear-gradient(95.03deg, #F09642 0%, #F0DF42 145.26%);
+        border-radius: 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+      }
+      p {
+        margin-top: 16px;
+        font-weight: 400;
+        color: #1C2D5A;
+      }
+    }
+
   }
 
 }

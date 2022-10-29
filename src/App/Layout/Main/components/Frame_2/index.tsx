@@ -3,6 +3,8 @@ import iconPlus from '../../../../../assets/Main/frameTwo/plus.png'
 import iconList from '../../../../../assets/Main/frameTwo/Circle.png'
 import image from '../../../../../assets/Main/frameTwo/frameTwo_image.svg'
 import background from '../../../../../assets/Main/frameTwo/background frame2.svg'
+import {cardsList} from "../../../../../utils/dataCards";
+import Cards from "./components/Cards";
 import cs from './style.module.scss'
 
 const FrameTwo: FC = () => {
@@ -68,8 +70,30 @@ const FrameTwo: FC = () => {
 				</div>
 
 				<div className={cs.container_two}>
-
+					<h1>Решение для тех, <br/> кто хочет работать на себя</h1>
+					<div className={cs.container_cards}>
+						{
+							cardsList.map(item => (
+								<Cards
+									key={item.id}
+									title={item.title}
+									text={item.text}
+									image={item.image}
+									backgroundURL={item.background}
+									backgroundColor={item.backogrundColor}
+								/>
+							))
+						}
+					</div>
 				</div>
+
+				<div className={cs.container_reg}>
+					<button>зарегистрироваться</button>
+					<p>
+						Регистрируйтесь в системе, чтобы <br/> узнать подробнее о доходах
+					</p>
+				</div>
+
 			</div>
 		</div>
 	);
