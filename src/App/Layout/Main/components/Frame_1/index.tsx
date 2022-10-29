@@ -1,10 +1,13 @@
-import React, {FC} from 'react';
+import React from 'react';
+
 import cs from './style.module.scss'
+import {useMediaQuery} from "react-responsive";
 
-const FrameOne: FC = () => {
+const FrameOne = () => {
+	// const isMobile = useMediaQuery({query: })
 	return (
-		<div className={cs.frame}>
-
+		<div className={cs.frameOne}>
+			
 		</div>
 	);
 };

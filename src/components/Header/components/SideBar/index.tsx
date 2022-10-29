@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
 import cross from '../../../../assets/Header/SideBar/cross.svg'
-import cs from './sidebar.module.scss';
 import {list} from "../../../../utils/list";
 import {Link} from "react-router-dom";
+import ButtonAuth from "../ButtonAuth";
+import cs from './sidebar.module.scss';
 
 type TSideBar = {
 	setSideBar: (state: boolean) => void
@@ -27,16 +28,7 @@ const SideBar: FC<TSideBar> = ({setSideBar}) => {
 					}
 				</ul>
 				<div className={cs.btn_container}>
-					<button className={cs.sign_in}>
-						<Link className={cs.link}  to={''}>
-							Вход
-						</Link>
-					</button>
-					<button className={cs.sign_us}>
-						<Link className={cs.link} to={''}>
-							Регистрация
-						</Link>
-					</button>
+					<ButtonAuth cs={cs}/>
 				</div>
 			</div>
 		</div>
