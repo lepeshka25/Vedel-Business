@@ -8,6 +8,7 @@ import Cards from "./components/Cards";
 import cs from './style.module.scss'
 
 const FrameTwo: FC = () => {
+
 	return (
 		<div
 			style={{background: `url("${background}") center / cover no-repeat`}}
