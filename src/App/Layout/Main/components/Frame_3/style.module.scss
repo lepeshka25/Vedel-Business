@@ -242,23 +242,84 @@
             p {
               font-weight: 600;
               @media (min-width: 768px) {
-                font-size: 1.4vw;
+                font-size: 1.2vw;
               }
             }
 
           }
 
-          .list {
-            width: 90%;
-            li {
-              margin-bottom: 10px;
-              p {
-                @media (min-width: 768px) {
-                  font-size: 1.2vw;
-                }
+          .lorem {
+            @media (min-width: 768px) {
+              font-size: 1.2vw;
+            }
+          }
+
+          .container_card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+            @media (max-width: 768px) {
+              flex-direction: column;
+            }
+
+            @media (min-width: 768px) {
+              flex-direction: row;
+            }
+
+            .card {
+              width: 30%;
+              padding: 24px;
+              background: #FFFEFC;
+              box-shadow: 10px 4px 30px rgba(172, 172, 172, 0.25);
+              border-radius: 10px;
+
+              @media (max-width: 768px) {
+                width: 100%;
+                margin: 20px 0;
               }
-              img {
-                margin-right: 10px;
+
+              @media (min-width: 768px) {
+                width: 30%;
+              }
+
+              .card_container {
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                @media (max-width: 768px) {
+                  flex-direction: row;
+                  justify-content: flex-start;
+                }
+
+                @media (min-width: 768px) {
+                  flex-direction: column;
+                  justify-content: space-between;
+                }
+
+                img {
+                  @media (max-width: 768px) {
+                    margin-right: 20px;
+                  }
+
+                  @media (min-width: 768px) {
+                    margin: 0;
+                    width: 20px;
+                  }
+                }
+
+                p {
+                  width: fit-content;
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: #1C2D5A;
+                  @media (min-width: 768px) {
+                    text-align: center;
+                    font-size: 1vw;
+                  }
+                }
               }
             }
           }
