@@ -6,7 +6,6 @@ import Laptop from "./components/isLaptop";
 
 const FrameFour: FC = () => {
 	const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
-
 	return (
 		<div className={cs.frameFour}>
 
