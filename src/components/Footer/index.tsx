@@ -1,5 +1,4 @@
 import React, {FC} from 'react';
-import Logo from "../../UI/Logo";
 import logo from '../../assets/Header/Logo.svg'
 import iconIns from '../../assets/Footer/instagram 1.svg'
 import iconVk from '../../assets/Footer/vk 1.svg'
