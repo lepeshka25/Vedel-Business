@@ -1,0 +1,52 @@
+.mobile {
+  width: 100%;
+  height: 389px;
+  padding: 70px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 422px;
+    height: 387.55px;
+
+    //img {
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //}
+    p {
+      color: #1C2D5A;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      color: white;
+      background: #554ABF;
+      border-radius: 24px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+    }
+
+  }
+}

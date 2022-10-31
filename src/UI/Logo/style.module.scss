@@ -1,3 +1,14 @@
 .logo {
-
+  @media (max-width: 768px) {
+    width: 73px;
+    height: 15px;
+  }
+  @media (min-width: 768px) {
+    width: 140px;
+    height: 42px;
+  }
+  @media (min-width: 1024px) {
+    width: 210px;
+    height: 42px;
+  }
 }

@@ -12,21 +12,22 @@
     align-items: center;
     .list {
       display: flex;
-      margin-right: 10px;
+      align-items: center;
+      margin-right: 20px;
       li {
-        margin: 0 10px;
-        
+        @media (min-width: 768px) {
+          margin: 0 10px;
+        }
         @media (min-width: 1024px) {
-          margin: 0 5px;
+          margin: 0 20px;
         }
 
         .link {
           text-decoration: none;
           color: #1C2D5A;
-          font-size: 16px;
-          @media (max-width: 1024px) {
-            font-size: 14px;
-          }
+          font-size: 1.1vw;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
         }
       }
     }
@@ -36,12 +37,22 @@
       align-items: center;
 
       button {
-        padding: 15px 30px;
         border: none;
         outline: none;
         margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @media (max-width: 1024px) {
           padding: 10px 20px;
+        }
+        @media (min-width: 768px) {
+          padding: 10px 15px;
+          font-size: 12px;
+        }
+        @media (min-width: 1024px) {
+          padding: 10px 20px;
+          font-size: 14px;
         }
       }
 

@@ -9,11 +9,12 @@ type THeader = {
 }
 
 const Header: FC<THeader> = () => {
-	const isMobile = useMediaQuery({query: '(min-width: 768px)'})
+	const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
 
 	return (
 		<div className={cs.header}>
-			{isMobile ? <Laptop/> : <Mobile/>}
+			{!isLaptop && <Mobile/>}
+			{isLaptop && <Laptop/>}
 		</div>
 	);
 };
