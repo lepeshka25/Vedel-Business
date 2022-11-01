@@ -5,15 +5,22 @@ import cs from './style.module.scss';
 
 const Mobile = () => {
 	return (
-		<div className={cs.mobile}>
-			<img src={background} alt=""/>
-			<div style={{background: `url("${icon}") center / cover no-repeat`}} className={cs.container}>
+		<div
+			style={{background: `url("${background}") center / cover no-repeat`}}
+			className={cs.mobile}
+		>
+
+			<div className={cs.container}>
 				<img src={icon} alt=""/>
-				<p>
-					развивайте свое дело и получайте доход в партнерстве с нами
-				</p>
-				<button>зарегистрироваться</button>
+
+				<div className={cs.card}>
+					<p>
+						развивайте свое дело и получайте доход в партнерстве с нами
+					</p>
+					<button>зарегистрироваться</button>
+				</div>
 			</div>
+
 		</div>
 	);
 };
