@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import background from '../../../../../../../assets/Main/FrameFive/background Card.svg'
-import {useMediaQuery} from "react-responsive";
 import cs from './style.module.scss'
 
 type TCard = {
@@ -9,8 +8,6 @@ type TCard = {
 }
 
 const Card: FC<TCard> = ({icon, text}) => {
-	const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
-
 	return (
 		<div
 			style={
