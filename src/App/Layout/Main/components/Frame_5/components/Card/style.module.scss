@@ -1,0 +1,26 @@
+.card {
+  border-radius: 20px;
+  padding: 1.5vw 2vw;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.2);
+  
+  @media (min-width: 768px) {
+    width: 20vw;
+  }
+
+  .container_card {
+    width: 100%;
+    img {
+      width: 2vw;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #4497B6;
+    }
+    p {
+      padding-top: 8px;
+      color: #1C2D5A;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 0.8vw;
+    }
+  }
+
+}
