@@ -1,3 +1,52 @@
-.FrameFour {
+.frameFour {
   width: 100%;
+  height: 389px;
+  position: relative;
+
+  .container {
+    position: absolute;
+    left: 10px;
+    top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      left: 50%;
+      transform: translateX(-120%);
+
+    }
+
+    img {
+      width: 422px;
+      height: 387.55px;
+      position: absolute;
+    }
+
+    .card {
+      p {
+        width: 280px;
+        color: #1C2D5A;
+        font-weight: 700;
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      button {
+        font-weight: 500;
+        font-size: 12px;
+        padding: 18px 24px;
+        border: none;
+        outline: none;
+        background: #554ABF;
+        border-radius: 24px;
+        text-transform: uppercase;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+    }
+  }
+
 }

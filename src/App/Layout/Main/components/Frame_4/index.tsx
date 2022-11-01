@@ -1,17 +1,32 @@
 import React, {FC} from 'react';
 import {useMediaQuery} from "react-responsive";
-import Mobile from "./components/isMobile";
-import Laptop from "./components/isLaptop";
+import backgroundLaptop from "../../../../../assets/Main/FrameFour/background.svg";
+import background from "../../../../../assets/Main/FrameFour/backgroundMobile.svg";
+import icon from "../../../../../assets/Main/FrameFour/icon.svg";
 import cs from './style.module.scss'
 
 const FrameFour: FC = () => {
 	const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
 
 	return (
-		<div className={cs.frameFour}>
+		<div
+			style={isLaptop
+				? {background: `url("${backgroundLaptop}") center / cover no-repeat`}
+				: {background: `url("${background}") center / cover no-repeat`}
+			}
+			className={cs.frameFour}
+		>
 
-			{!isLaptop && <Mobile/>}
-			{isLaptop && <Laptop/>}
+			<div className={cs.container}>
+				<img src={icon} alt=""/>
+
+				<div className={cs.card}>
+					<p>
+						развивайте свое дело и получайте доход в партнерстве с нами
+					</p>
+					<button>зарегистрироваться</button>
+				</div>
+			</div>
 
 		</div>
 	);
