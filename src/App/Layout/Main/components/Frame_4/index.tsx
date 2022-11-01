@@ -1,19 +1,20 @@
 import React, {FC} from 'react';
-// import {useMediaQuery} from "react-responsive";
+import {useMediaQuery} from "react-responsive";
+import background from '../../../../../assets/Main/FrameFour/ajy 44 1.png'
 // import backgroundLaptop from "../../../../../assets/Main/FrameFour/background.svg";
 // import background from "../../../../../assets/Main/FrameFour/backgroundMobile.svg";
 import icon from "../../../../../assets/Main/FrameFour/icon.svg";
 import cs from './style.module.scss'
 
 const FrameFour: FC = () => {
-	// const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
+	const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
 
 	return (
 		<div
-			// style={isLaptop
-			// 	? {background: `url("${backgroundLaptop}") center / cover no-repeat`}
-			// 	: {background: `url("${background}") center / cover no-repeat`}
-			// }
+			style={isLaptop
+				? {background: `url("${background}") center / cover no-repeat`}
+				: {background: `url("${background}") center / cover no-repeat`}
+			}
 			className={cs.frameFour}
 		>
 

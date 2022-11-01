@@ -20,17 +20,3 @@ const Header: FC<THeader> = () => {
 };
 
 export default Header;
-
-
-// <div className={cs.container_logo}>
-// 	<Logo/>
-// </div>
-//
-// <div className={cs.container_burger_contact}>
-// 	<img src={exclude} alt=""/>
-// 	<img onClick={() => setSideBar(true)} src={burger} alt=""/>
-// </div>
-//
-// <div style={sideBar ? {display: 'block'} : {display: 'none'}} className={cs.sideBar_container}>
-// 	<SideBar setSideBar={setSideBar}/>
-// </div>
