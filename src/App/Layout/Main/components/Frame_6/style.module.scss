@@ -1,0 +1,36 @@
+.frameSix {
+  padding: 100px 0;
+  text-align: center;
+
+  h1 {
+    margin: 0 auto 20px auto;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+
+    @media (min-width: 425px) {
+      width: 400px;
+    }
+
+    @media (min-width: 768px) {
+      width: 666px;
+      font-size: 40px;
+    }
+  }
+
+  button {
+    background: linear-gradient(95.03deg, #F09642 0%, #F0DF42 145.26%);
+    border-radius: 40px;
+    padding: 18px 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 10px #F09642;
+  }
+}
