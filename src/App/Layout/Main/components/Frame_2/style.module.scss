@@ -3,6 +3,12 @@
 
   .frameTow_container {
     width: 100%;
+
+    @media (min-width: 1440px) {
+      width: 1440px;
+      margin: 0 auto;
+    }
+
     .container_one {
       width: 100%;
       display: flex;

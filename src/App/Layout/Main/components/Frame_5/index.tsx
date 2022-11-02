@@ -22,56 +22,58 @@ const FrameFive: FC = () => {
 			</div>
 
 			<div style={{background: `url("${background}") center / cover no-repeat`}} className={cs.container_frameFive}>
-				<div className={cs.container_top}>
-					<div className={cs.left}>
-						<img src={top_image} alt=""/>
-					</div>
-					<div className={cs.right}>
-						{
-							!isLaptop && dataFrameFiveMobile.map(item => (
-								<div key={item[0].id} className={cs.card_container}>
-									<Card icon={item[0].icon} text={item[0].text} />
-									<Card icon={item[1].icon} text={item[1].text} />
-								</div>
-							))
-						}
-						{
-							isLaptop && dataFrameFive.map(item => (
-								<Card icon={item.icon} text={item.text} key={item.id} />
-							))
-						}
-					</div>
-				</div>
-
-				<div className={cs.container_bottom}>
-
-					<div className={cs.left}>
-						<h1 className={cs.title}>выход на новый <br/> уровень жизни</h1>
-						<p className={cs.subTitle}>
-							В партнерстве с нами вы посмотрите на Мир под другим углом — почувствуете себя в зоне комфорта, личностного роста и финансового изобилия
-						</p>
-						<p className={cs.content}>
-							<img src={iconCross} alt=""/> Премиальные <br/> бонусы
-						</p>
-					</div>
-
-					<div className={cs.right}>
-						<h1>Привилегии для партнеров</h1>
-
-						<div className={cs.container_card}>
+				<div className={cs.container_frameFive_block}>
+					<div className={cs.container_top}>
+						<div className={cs.left}>
+							<img src={top_image} alt=""/>
+						</div>
+						<div className={cs.right}>
 							{
-								dataListCard.map(item => (
-									<div key={item.id} className={cs.card}>
-										<img src={item.icon} alt=""/>
-										<p>
-											{item.text}
-										</p>
+								!isLaptop && dataFrameFiveMobile.map(item => (
+									<div key={item[0].id} className={cs.card_container}>
+										<Card icon={item[0].icon} text={item[0].text} />
+										<Card icon={item[1].icon} text={item[1].text} />
 									</div>
+								))
+							}
+							{
+								isLaptop && dataFrameFive.map(item => (
+									<Card icon={item.icon} text={item.text} key={item.id} />
 								))
 							}
 						</div>
 					</div>
 
+					<div className={cs.container_bottom}>
+
+						<div className={cs.left}>
+							<h1 className={cs.title}>выход на новый <br/> уровень жизни</h1>
+							<p className={cs.subTitle}>
+								В партнерстве с нами вы посмотрите на Мир под другим углом — почувствуете себя в зоне комфорта, личностного роста и финансового изобилия
+							</p>
+							<p className={cs.content}>
+								<img src={iconCross} alt=""/> Премиальные <br/> бонусы
+							</p>
+						</div>
+
+						<div className={cs.right}>
+							<h1>Привилегии для партнеров</h1>
+
+							<div className={cs.container_card}>
+								{
+									dataListCard.map(item => (
+										<div key={item.id} className={cs.card}>
+											<img src={item.icon} alt=""/>
+											<p>
+												{item.text}
+											</p>
+										</div>
+									))
+								}
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 

@@ -18,6 +18,12 @@
       height: fit-content;
       padding: 1.5vw 2vw;
     }
+
+    @media (min-width: 1440px) {
+      width: 359px;
+      height: 188px;
+    }
+
     img {
       padding-bottom: 8px;
       border-bottom: 1px solid #4497B6;
@@ -30,6 +36,11 @@
       @media (min-width: 768px) {
         width: 2vw;
         height: fit-content;
+      }
+      
+      @media (min-width: 1440px) {
+        width: 52px;
+        height: 52px;
       }
 
     }
@@ -46,6 +57,10 @@
 
       @media (min-width: 768px) {
         font-size: 0.8vw;
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 16px;
       }
 
     }
