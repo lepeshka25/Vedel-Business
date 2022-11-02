@@ -37,3 +37,42 @@ export const dataFrameFive = [
 		icon: iconHand
 	},
 ]
+
+export const dataFrameFiveMobile = [
+	[
+		{
+			id: 1,
+			text: 'Пошаговое онлайн-обучение и руководство по запуску',
+			icon: iconGLOB
+		},
+		{
+			id: 2,
+			text: 'Ваш личный веб-сайт для продвижения в интернете',
+			icon: groupWWW
+		}
+	],
+	[
+		{
+			id: 3,
+			text: 'Ваш личный наставник поможет решить любой вопрос',
+			icon: iconFollowers
+		},
+		{
+			id: 4,
+			text: 'Сертифицированная, качественная эко-продукция ',
+			icon: iconECO
+		}
+	],
+	[
+		{
+			id: 5,
+			text: 'Готовая система масштабирования бизнеса ',
+			icon: iconPROFIT
+		},
+		{
+			id: 6,
+			text: 'Сильная поддержка команды и бизнес-партнеров ',
+			icon: iconHand
+		}
+	]
+]
