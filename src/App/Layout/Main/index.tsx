@@ -12,7 +12,6 @@ const Main: FC = () => {
 			<Frame.FrameFour/>
 			<Frame.FrameFive/>
 			<Frame.FrameSix/>
-			<Frame.FrameSeven/>
 
 		</div>
 	);

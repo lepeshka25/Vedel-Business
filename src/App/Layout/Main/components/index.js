@@ -4,7 +4,6 @@ import FrameThree from "./Frame_3";
 import FrameFour from "./Frame_4";
 import FrameFive from "./Frame_5";
 import FrameSix from "./Frame_6";
-import FrameSeven from "./Frame_7";
 
 export {
 	FrameOne,
@@ -13,5 +12,4 @@ export {
 	FrameFour,
 	FrameFive,
 	FrameSix,
-	FrameSeven,
 }
