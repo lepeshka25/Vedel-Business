@@ -13,32 +13,34 @@ type TFooter = {
 const Footer: FC<TFooter> = () => {
 	return (
 		<div className={cs.footer}>
-			<div className={cs.container_top_footer}>
-				<img className={cs.logo} src={logo} alt=""/>
+			<div className={cs.container_footer}>
+				<div className={cs.container_top_footer}>
+					<img className={cs.logo} src={logo} alt=""/>
 
-				<ul className={cs.list}>
-					<li>
-						<img src={iconIns} alt=""/>
-					</li>
-					<li>
-						<img src={iconVk} alt=""/>
-					</li>
-					<li>
-						<img src={iconFacebook} alt=""/>
-					</li>
-					<li>
-						<img src={iconTwi} alt=""/>
-					</li>
-				</ul>
-			</div>
-
-			<div className={cs.container_bottom_footer}>
-				<div className={cs.container_text}>
-					<p>©2021 «Company name» | Разработано - Effex-it.com</p>
+					<ul className={cs.list}>
+						<li>
+							<img src={iconIns} alt=""/>
+						</li>
+						<li>
+							<img src={iconVk} alt=""/>
+						</li>
+						<li>
+							<img src={iconFacebook} alt=""/>
+						</li>
+						<li>
+							<img src={iconTwi} alt=""/>
+						</li>
+					</ul>
 				</div>
-				<div className={cs.container_text_bottom}>
-					<p>Пользовательское соглашение</p>
-					<p>Политика конфиденциальности</p>
+
+				<div className={cs.container_bottom_footer}>
+					<div className={cs.container_text}>
+						<p>©2021 «Company name» | Разработано - Effex-it.com</p>
+					</div>
+					<div className={cs.container_text_bottom}>
+						<p>Пользовательское соглашение</p>
+						<p>Политика конфиденциальности</p>
+					</div>
 				</div>
 			</div>
 		</div>

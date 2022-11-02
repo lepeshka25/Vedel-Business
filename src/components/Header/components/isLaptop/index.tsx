@@ -8,23 +8,25 @@ import ButtonAuth from "../ButtonAuth";
 const Laptop = () => {
 	return (
 		<div className={cs.Laptop}>
-			<Logo/>
+			<div className={cs.container_laptop}>
+				<Logo/>
 
-			<div className={cs.container}>
-				<ul className={cs.list}>
-					{
-						list.map(item => (
-							<li key={item.id}>
-								<Link className={cs.link} to={item.path}>
-									{item.title}
-								</Link>
-							</li>
-						))
-					}
-				</ul>
+				<div className={cs.container}>
+					<ul className={cs.list}>
+						{
+							list.map(item => (
+								<li key={item.id}>
+									<Link className={cs.link} to={item.path}>
+										{item.title}
+									</Link>
+								</li>
+							))
+						}
+					</ul>
 
-				<div className={cs.container_button}>
-					<ButtonAuth cs={cs}/>
+					<div className={cs.container_button}>
+						<ButtonAuth cs={cs}/>
+					</div>
 				</div>
 			</div>
 		</div>
