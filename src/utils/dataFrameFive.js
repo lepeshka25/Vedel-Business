@@ -5,6 +5,12 @@ import iconECO from '../assets/Main/FrameFive/icon/eco 1.svg'
 import iconPROFIT from '../assets/Main/FrameFive/icon/profit 1.svg'
 import iconHand from '../assets/Main/FrameFive/icon/hand-shake 2.svg'
 
+import car from '../assets/Main/FrameFive/iconBottom/Group 229.svg'
+import money from '../assets/Main/FrameFive/iconBottom/Group 194.svg'
+import fly from '../assets/Main/FrameFive/iconBottom/airplane-2 2.svg'
+import star from '../assets/Main/FrameFive/iconBottom/Group 192.svg'
+import people from '../assets/Main/FrameFive/iconBottom/Group 222.svg'
+
 export const dataFrameFive = [
 	{
 		id: 1,
@@ -75,4 +81,32 @@ export const dataFrameFiveMobile = [
 			icon: iconHand
 		}
 	]
+]
+
+export const dataListCard = [
+	{
+		id: 1,
+		text: 'Авто и недвижимость от компании',
+		icon:  car ,
+	},
+	{
+		id: 2,
+		text: 'Премии от 10 000 до 1 млн. рублей',
+		icon: money  ,
+	},
+	{
+		id: 3,
+		text: 'Путешествия по миру',
+		icon:  fly ,
+	},
+	{
+		id: 4,
+		text: 'Статусные значки из драгоценных металлов',
+		icon:  star ,
+	},
+	{
+		id: 5,
+		text: 'Участие в закрытом клубе предпринимателей',
+		icon:  people ,
+	},
 ]
