@@ -6,10 +6,10 @@ import background from '../../../../../assets/Main/frameTwo/background frame2.sv
 
 //icon background
 
-import icon1 from '../../../../../assets/icon/Polygon 6.svg'
-import iconCrossOrange from '../../../../../assets/icon/+ 3.svg'
-import iconCrossWhiteBlue from '../../../../../assets/icon/+ (1).svg'
-import iconCrossBlue from '../../../../../assets/icon/+.svg'
+// import icon1 from '../../../../../assets/icon/Polygon 6.svg'
+// import iconCrossOrange from '../../../../../assets/icon/+ 3.svg'
+// import iconCrossWhiteBlue from '../../../../../assets/icon/+ (1).svg'
+// import iconCrossBlue from '../../../../../assets/icon/+.svg'
 
 //end icon background
 

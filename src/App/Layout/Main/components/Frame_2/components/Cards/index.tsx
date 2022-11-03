@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import cs from './cards.module.scss';
-import {useMediaQuery} from "react-responsive";
 
 type TCards = {
 	text: string,

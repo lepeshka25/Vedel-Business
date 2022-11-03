@@ -1,5 +1,4 @@
 import React from 'react';
-import icon from '../../../../../assets/icon/Polygon 6.svg'
 import Mobile from "./components/isMobile";
 import {useMediaQuery} from "react-responsive";
 import Laptop from "./components/isLaptop";
