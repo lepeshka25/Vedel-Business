@@ -1,6 +1,26 @@
 .frameTwo {
   width: 100%;
 
+  .greenCircle {
+    width: 554px;
+    height: 512px;
+    background: rgba(167, 205, 111, 0.38);
+    filter: blur(150px);
+    position: absolute;
+    top: 0;
+    right: -250px;
+  }
+
+  .orangeCircle {
+    width: 779px;
+    height: 719px;
+    position: absolute;
+    bottom: -10%;
+    left: -40%;
+    background: rgba(245, 206, 128, 0.28);
+    filter: blur(100px);
+  }
+
   .frameTow_container {
     width: 100%;
     padding: 0 10px ;

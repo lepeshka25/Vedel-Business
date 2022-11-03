@@ -1,5 +1,28 @@
 .frameOne {
   width: 100%;
+
+  .orange_icon {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+  }
+
+  .orange_icon2 {
+    position: absolute;
+    top: 800px;
+    left: 500px;
+  }
+
+  .orange_circle {
+    position: absolute;
+    top: 650px;
+    left: -400px;
+    background: rgba(245, 206, 128, 0.28);
+    filter: blur(100px);
+    width: 495px;
+    height: 457px;
+    z-index: 10;
+  }
   
   @media (min-width: 1440px) {
     width: 1440px;

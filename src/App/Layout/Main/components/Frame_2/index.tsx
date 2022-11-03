@@ -3,8 +3,19 @@ import iconPlus from '../../../../../assets/Main/frameTwo/plus.png'
 import iconList from '../../../../../assets/Main/frameTwo/Circle.png'
 import image from '../../../../../assets/Main/frameTwo/frameTwo_image.svg'
 import background from '../../../../../assets/Main/frameTwo/background frame2.svg'
+
+//icon background
+
+import icon1 from '../../../../../assets/icon/Polygon 6.svg'
+import iconCrossOrange from '../../../../../assets/icon/+ 3.svg'
+import iconCrossWhiteBlue from '../../../../../assets/icon/+ (1).svg'
+import iconCrossBlue from '../../../../../assets/icon/+.svg'
+
+//end icon background
+
 import {cardsList} from "../../../../../utils/dataCards";
 import Cards from "./components/Cards";
+
 import cs from './style.module.scss'
 
 const FrameTwo: FC = () => {
@@ -14,6 +25,11 @@ const FrameTwo: FC = () => {
 			style={{background: `url("${background}") center / cover no-repeat`}}
 			className={cs.frameTwo}
 		>
+
+			<div className={cs.greenCircle}></div>
+
+			<div className={cs.orangeCircle}></div>
+
 			<div className={cs.frameTow_container}>
 				<div className={cs.container_one}>
 

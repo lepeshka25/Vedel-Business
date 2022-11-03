@@ -10,15 +10,9 @@ const FrameOne = () => {
 
 	return (
 		<div className={cs.frameOne}>
-			<img
-				style={{
-					position: 'absolute',
-					top: "70px",
-					left: '10px'
-				}}
-				src={icon}
-				alt=""
-			/>
+
+			<div className={cs.orange_circle}></div>
+
 			{!isLaptop && <Mobile/>}
 			{isLaptop && <Laptop/>}
 		</div>
