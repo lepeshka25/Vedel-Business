@@ -8,6 +8,19 @@
     padding: 15px 20px;
     z-index: 100;
     box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 469px;
+      height: 489px;
+      background: rgba(127, 163, 234, 0.26);
+      filter: blur(150px);
+      left: -100px;
+      top: -238px;
+    }
+
     @media (min-width: 1440px) {
       width: 1440px;
       margin: 0 auto;

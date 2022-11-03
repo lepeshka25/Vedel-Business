@@ -7,6 +7,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 214px;
+      height: 223px;
+      background: rgba(127, 163, 234, 0.26);
+      filter: blur(150px);
+      left: -81px;
+      top: -44px;
+    }
 
     .container_logo {
       img {

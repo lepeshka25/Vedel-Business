@@ -15,7 +15,6 @@ const FrameFour: FC = () => {
 			}
 			className={cs.frameFour}
 		>
-
 			<div className={cs.container_frameFour}>
 				<div className={cs.container}>
 					<img src={icon} alt=""/>

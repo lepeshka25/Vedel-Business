@@ -16,6 +16,7 @@ const FrameTwo: FC = () => {
 		>
 			<div className={cs.frameTow_container}>
 				<div className={cs.container_one}>
+
 					<div className={cs.left}>
 						<img src={image} alt=""/>
 					</div>
@@ -36,19 +37,16 @@ const FrameTwo: FC = () => {
 								<p>В неё входят: </p>
 							</li>
 							<li
-								style={{listStyle: `georgian inside url('${iconList}')`}}
 							>
-								эффективные инструменты интернет-маркетинга,
+								<img src={iconList} alt=""/> <p>эффективные инструменты интернет-маркетинга,</p>
 							</li>
 							<li
-								style={{listStyle: `georgian inside url('${iconList}')`}}
 							>
-								инновационные эко-продукты для здоровья,
+								<img src={iconList} alt=""/> <p>инновационные эко-продукты для здоровья,</p>
 							</li>
 							<li
-								style={{listStyle: `georgian inside url('${iconList}')`}}
 							>
-								система бизнес-обучения и личностного развития.
+								<img src={iconList} alt=""/> <p>система бизнес-обучения и личностного развития.</p>
 							</li>
 						</ul>
 
@@ -59,8 +57,8 @@ const FrameTwo: FC = () => {
 							</div>
 							<div className={cs.right}>
 								<p>
-									Используя наш опыт и знания, вы сможете легко <br/>
-									стать интернет-предпринимателем с доходностью <br/>
+									Используя наш опыт и знания, вы сможете легко
+									стать интернет-предпринимателем с доходностью
 									от 500$ в месяц в нише эко-продуктов.
 								</p>
 							</div>
