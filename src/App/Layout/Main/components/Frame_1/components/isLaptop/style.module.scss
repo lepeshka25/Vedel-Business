@@ -3,7 +3,12 @@
 
   .laptop_container {
     position: relative;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+    @media (min-width: 1150px) {
+      padding-bottom: 100px;
+    }
 
     @media (min-width: 1440px) {
       width: 1440px;
@@ -117,36 +122,71 @@
   .laptop_container_bottom {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    padding: 0 20px;
+
+    @media (min-width: 1150px) {
+      justify-content: space-between;
+    }
+    
     @media (min-width: 1440px) {
       width: 1440px;
       margin: 0 auto;
     }
 
     .container_card {
-      display: grid;
-      grid-template-columns: repeat(4, 210px);
-      grid-template-rows: 1fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 0;
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+      }
+
+      @media (min-width: 1150px) {
+        display: flex;
+      }
 
       .card {
-        margin: 0 auto;
+        width: fit-content;
+        margin: auto;
+        text-align: center;
 
-        .container_card {
+        .container {
           display: grid;
-          grid-template-columns: 1fr;
           grid-template-rows: repeat(2, 1fr);
           grid-column-gap: 0px;
           grid-row-gap: 10px;
 
+          @media (min-width: 768px) {
+            grid-template-columns: 140px;
+          }
+
           img {
             margin: 0 auto;
+            
+            @media (min-width: 768px) {
+              width: 5vw;
+            }
+            
+            @media (min-width: 1150px) {
+              width: 50px;
+              height: 50px;
+            }
+
           }
 
           p {
+            font-weight: 500;
+            color: #1C2D5A;
             text-align: center;
+            @media (min-width: 768px) {
+              font-size: 1vw;
+            }
+            @media (min-width: 1150px) {
+              font-size: 14px;
+            }
           }
 
         }
@@ -158,3 +198,32 @@
   }
 
 }
+
+
+//display: grid;
+//grid-template-columns: repeat(4, 210px);
+//grid-template-rows: 1fr;
+//grid-column-gap: 10px;
+//grid-row-gap: 0;
+
+//.card {
+//  margin: 0 auto;
+//
+//  .container {
+//    display: grid;
+//    grid-template-columns: 1fr;
+//    grid-template-rows: repeat(2, 1fr);
+//    grid-column-gap: 0px;
+//    grid-row-gap: 10px;
+//
+//    img {
+//      margin: 0 auto;
+//    }
+//
+//    p {
+//      text-align: center;
+//    }
+//
+//  }
+//
+//}
