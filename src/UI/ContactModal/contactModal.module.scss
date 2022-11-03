@@ -1,3 +1,77 @@
 .modal {
+  width: 363px;
+  background: #FFFDFA;
+  box-shadow: 4px 10px 30px rgba(194, 192, 192, 0.3);
+  border-radius: 5px;
+
+  .modal_container {
+    padding: 24px 30px;
+    display: grid;
+    grid-template-columns: 19fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0;
+
+    .left {
+      h1 {
+        font-weight: 700;
+        font-size: 14px;
+        color: #1C2D5A;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        color: #1C2D5A;
+        margin-bottom: 14px;
+      }
+
+      .container_people_info {
+        display: flex;
+        align-items: center;
+        img {
+          width: 58px;
+          height: 58px;
+          margin-right: 10px;
+          border-radius: 100%;
+        }
+
+        .contact_list {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, 1fr);
+          grid-column-gap: 10px;
+          grid-row-gap: 0;
+
+          p {
+            display: flex;
+            align-items: center;
+            color: #1C2D5A;
+            font-weight: 500;
+            font-size: 12px;
+            margin-bottom: 5px;
+            .icon {
+              margin-right: 10px;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .icon {
+        padding-top: 10px;
+        width: fit-content;
+      }
+    }
+
+  }
 
 }

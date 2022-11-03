@@ -1,9 +1,12 @@
 import React from 'react';
 import text from '../../../../../../../assets/Main/FrameOne/не выходя из дома 2.svg'
 import background from '../../../../../../../assets/Main/FrameOne/Изображение главный экран 1.png'
+import {data} from "../../../../../../../utils/dataFrameOne";
 import cs from './style.module.scss'
+import ContactModal from "../../../../../../../UI/ContactModal";
 
 const Laptop = () => {
+	const [stateModal , setStateModal] = React.useState(false)
 	return (
 		<div className={cs.laptop}>
 			<div
@@ -38,6 +41,22 @@ const Laptop = () => {
 					</div>
 				</div>
 
+			</div>
+
+			<div className={cs.laptop_container_bottom}>
+				<ContactModal setStateModal={setStateModal}/>
+				<div className={cs.container_card}>
+					{
+						data?.map(item => (
+							<div key={item.id} className={cs.card}>
+								<div className={cs.container_card}>
+									<img src={item.icon} alt=""/>
+									<p>{item.text}</p>
+								</div>
+							</div>
+						))
+					}
+				</div>
 			</div>
 		</div>
 	);

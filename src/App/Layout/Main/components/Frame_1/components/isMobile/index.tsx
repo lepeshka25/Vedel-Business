@@ -1,8 +1,8 @@
 import React from 'react';
 import background from '../../../../../../../assets/Main/FrameOne/Изображение главный экран 2.png'
 import title from '../../../../../../../assets/Main/FrameOne/не выходя из дома 1.svg'
-import cs from './style.module.scss'
 import {data} from "../../../../../../../utils/dataFrameOne";
+import cs from './style.module.scss'
 
 const Mobile = () => {
 	return (
