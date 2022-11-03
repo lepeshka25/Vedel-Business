@@ -2,6 +2,7 @@
 
   .container_text {
     text-align: center;
+    z-index: 10;
 
     margin-top: 100px;
 
@@ -32,9 +33,18 @@
 
   .container_frameFive {
     padding: 100px 0;
+    background: url("../../../../../assets/Main/FrameFive/Vector 8.svg") center / cover no-repeat;
 
     @media (min-width: 768px) {
       padding: 100px 10px;
+    }
+
+    .background {
+      //width: 1920px;
+      //height: fit-content;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
     .container_frameFive_block {

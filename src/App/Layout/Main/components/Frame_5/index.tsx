@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 
 import iconCross from '../../../../../assets/Main/FrameFive/Vector.png'
-import background from '../../../../../assets/Main/FrameFive/Vector 8.svg'
+// import background from '../../../../../assets/Main/FrameFive/Vector 8.svg'
 import top_image from '../../../../../assets/Main/FrameFive/image 125.svg'
 
 import Card from "./components/Card";
@@ -21,7 +21,10 @@ const FrameFive: FC = () => {
 				<p>после регистрации</p>
 			</div>
 
-			<div style={{background: `url("${background}") center / cover no-repeat`}} className={cs.container_frameFive}>
+			{/*style={{background: `url("${background}") center / cover no-repeat`}}*/}
+
+			<div className={cs.container_frameFive}>
+				{/*<img className={cs.background} src={background} alt=""/>*/}
 				<div className={cs.container_frameFive_block}>
 					<div className={cs.container_top}>
 						<div className={cs.left}>
