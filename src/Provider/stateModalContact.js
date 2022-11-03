@@ -8,7 +8,7 @@ export const ProviderModal = ({children}) => {
 	const value = React.useMemo(() => ({
 		setStateModal,
 		stateModal,
-	}))
+	}) , [stateModal , setStateModal])
 
 	return (<ContextModal.Provider value={value}>{children}</ContextModal.Provider>)
 }
