@@ -36,12 +36,14 @@
     background: url("../../../../../assets/Main/FrameFive/Vector 8.svg") center / cover no-repeat;
 
     @media (min-width: 768px) {
-      padding: 100px 10px;
+      padding: 100px 3vw;
+    }
+    
+    @media (min-width: 1440px) {
+      padding: 100px 20px;
     }
 
     .background {
-      //width: 1920px;
-      //height: fit-content;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -171,7 +173,6 @@
 
             @media (max-width: 768px) {
               font-size: 24px;
-              //font-size: 7.5vw;
               margin-bottom: 20px;
             }
 
@@ -250,13 +251,13 @@
             //  margin: 0 auto;
             //}
 
-            //@media (min-width: 480px) {
-            //  display: grid;
-            //  grid-template-columns: repeat(3, 1fr);
-            //  grid-template-rows: repeat(2, 1fr);
-            //  grid-column-gap: 0;
-            //  grid-row-gap: 0;
-            //}
+            @media (min-width: 480px) {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(2, 1fr);
+              grid-column-gap: 0;
+              grid-row-gap: 0;
+            }
 
             .card {
               display: grid;

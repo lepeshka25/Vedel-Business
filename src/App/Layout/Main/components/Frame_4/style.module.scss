@@ -28,6 +28,10 @@
         width: 422px;
         height: 387.55px;
         position: absolute;
+        @media (min-width: 1024px) {
+          width: 500px;
+          height: 450px;
+        }
       }
 
       .card {
