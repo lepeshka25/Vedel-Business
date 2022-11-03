@@ -56,16 +56,6 @@ const Laptop = () => {
 							</div>
 						))
 					}
-					{/*{
-						data?.map(item => (
-							<div key={item.id} className={cs.card}>
-								<div className={cs.container_card}>
-									<img src={item.icon} alt=""/>
-									<p>{item.text}</p>
-								</div>
-							</div>
-						))
-					}*/}
 				</div>
 			</div>
 		</div>
