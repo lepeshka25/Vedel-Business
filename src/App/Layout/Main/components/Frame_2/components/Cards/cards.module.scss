@@ -24,7 +24,10 @@
   }
 
   .card_container {
-    color: #1C2D5A !important;
+    @media (max-width: 768px) {
+      color: #1C2D5A !important;
+    }
+
     h2 {
       font-size: 16px;
       text-transform: uppercase;
