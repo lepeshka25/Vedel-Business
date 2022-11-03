@@ -3,14 +3,18 @@ import image from '../../assets/ContactModal/image.svg'
 import {BsFillPersonFill} from "react-icons/bs";
 import {IoIosMail} from "react-icons/io";
 import {MdCall} from "react-icons/md";
-import cs from './contactModal.module.scss'
 import {ContactModalData} from "../../utils/ContactModal";
+import {useMediaQuery} from "react-responsive";
+import {ImCross} from "react-icons/im";
+import cs from './contactModal.module.scss'
 
 type TContactModal = {
-	setStateModal: (state: boolean) => void
+	setStateModal?: (state: boolean) => void
 }
 
 const ContactModal: FC<TContactModal> = ({setStateModal}) => {
+	const isLaptop = useMediaQuery({query: '(min-width: 768px)'})
+
 	return (
 		<div className={cs.modal}>
 			<div className={cs.modal_container}>
@@ -28,8 +32,9 @@ const ContactModal: FC<TContactModal> = ({setStateModal}) => {
 				</div>
 
 				<div className={cs.right}>
+					{!isLaptop && <ImCross onClick={() => setStateModal && setStateModal(false)}/>}
 					{
-						ContactModalData.map((item , index) => (
+						ContactModalData.map((item, index) => (
 							<img key={index} className={cs.icon} src={item} alt=""/>
 						))
 					}

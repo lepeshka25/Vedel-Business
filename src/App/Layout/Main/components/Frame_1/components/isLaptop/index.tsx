@@ -6,7 +6,7 @@ import cs from './style.module.scss'
 import ContactModal from "../../../../../../../UI/ContactModal";
 
 const Laptop = () => {
-	const [stateModal , setStateModal] = React.useState(false)
+
 	return (
 		<div className={cs.laptop}>
 			<div
@@ -44,7 +44,7 @@ const Laptop = () => {
 			</div>
 
 			<div className={cs.laptop_container_bottom}>
-				<ContactModal setStateModal={setStateModal}/>
+				<ContactModal/>
 				<div className={cs.container_card}>
 					{
 						data?.map(item => (

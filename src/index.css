@@ -8,10 +8,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-button {
-  cursor: pointer;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -19,6 +15,10 @@ button {
 html , body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul , ol {
