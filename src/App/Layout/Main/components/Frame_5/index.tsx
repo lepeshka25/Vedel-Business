@@ -21,10 +21,7 @@ const FrameFive: FC = () => {
 				<p>после регистрации</p>
 			</div>
 
-			{/*style={{background: `url("${background}") center / cover no-repeat`}}*/}
-
 			<div className={cs.container_frameFive}>
-				{/*<img className={cs.background} src={background} alt=""/>*/}
 				<div className={cs.container_frameFive_block}>
 					<div className={cs.container_top}>
 						<div className={cs.left}>
@@ -49,30 +46,34 @@ const FrameFive: FC = () => {
 
 					<div className={cs.container_bottom}>
 
-						<div className={cs.left}>
-							<h1 className={cs.title}>выход на новый <br/> уровень жизни</h1>
-							<p className={cs.subTitle}>
-								В партнерстве с нами вы посмотрите на Мир под другим углом — почувствуете себя в зоне комфорта, личностного роста и финансового изобилия
-							</p>
-							<p className={cs.content}>
-								<img src={iconCross} alt=""/> Премиальные <br/> бонусы
-							</p>
-						</div>
+						<div className={cs.block}>
+							<div className={cs.left}>
+								<div className={cs.container_left}>
+									<h1 className={cs.title}>выход на новый <br/> уровень жизни</h1>
+									<p className={cs.subTitle}>
+										В партнерстве с нами вы посмотрите на Мир под другим углом — почувствуете себя в зоне комфорта, личностного роста и финансового изобилия
+									</p>
+									<p className={cs.content}>
+										<img src={iconCross} alt=""/> Премиальные <br/> бонусы
+									</p>
+								</div>
+							</div>
 
-						<div className={cs.right}>
-							<h1>Привилегии для партнеров</h1>
+							<div className={cs.right}>
+								<h1>Привилегии для партнеров</h1>
 
-							<div className={cs.container_card}>
-								{
-									dataListCard.map(item => (
-										<div key={item.id} className={cs.card}>
-											<img src={item.icon} alt=""/>
-											<p>
-												{item.text}
-											</p>
-										</div>
-									))
-								}
+								<div className={cs.container_card}>
+									{
+										dataListCard.map(item => (
+											<div key={item.id} className={cs.card}>
+												<img src={item.icon} alt=""/>
+												<p>
+													{item.text}
+												</p>
+											</div>
+										))
+									}
+								</div>
 							</div>
 						</div>
 
